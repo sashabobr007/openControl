@@ -7,15 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813F72E42A0A32FB00136610 /* NoteSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813F72E32A0A32FB00136610 /* NoteSheet.swift */; };
+		814E6ABA2A0969BD00BB6DE2 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */; };
+		814E6ABC2A0973EB00BB6DE2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6ABB2A0973EB00BB6DE2 /* Localization.swift */; };
+		8176D7642A06C4DA002D4527 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */; };
+		8176D7652A06C4DA002D4527 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D75D2A06C4D9002D4527 /* Manrope-Bold.ttf */; };
+		8176D7662A06C4DA002D4527 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D75E2A06C4DA002D4527 /* Manrope-Light.ttf */; };
+		8176D7672A06C4DA002D4527 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D75F2A06C4DA002D4527 /* Manrope-Regular.ttf */; };
+		8176D7682A06C4DA002D4527 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D7602A06C4DA002D4527 /* Manrope-ExtraLight.ttf */; };
+		8176D76A2A06C4DA002D4527 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D7622A06C4DA002D4527 /* Manrope-Medium.ttf */; };
+		8176D76B2A06C4DA002D4527 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D7632A06C4DA002D4527 /* Manrope-SemiBold.ttf */; };
+		8176D7822A06C6DE002D4527 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D76E2A06C6DE002D4527 /* TabBar.swift */; };
+		8176D7832A06C6DE002D4527 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D76F2A06C6DE002D4527 /* Notes.swift */; };
+		8176D7842A06C6DE002D4527 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7702A06C6DE002D4527 /* Chat.swift */; };
+		8176D7852A06C6DE002D4527 /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7712A06C6DE002D4527 /* NewNote.swift */; };
+		8176D7862A06C6DE002D4527 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7722A06C6DE002D4527 /* Home.swift */; };
+		8176D7872A06C6DE002D4527 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7732A06C6DE002D4527 /* Profile.swift */; };
+		8176D7882A06C6DE002D4527 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7742A06C6DE002D4527 /* ImagePicker.swift */; };
+		8176D7892A06C6DE002D4527 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7752A06C6DE002D4527 /* Note.swift */; };
+		8176D78A2A06C6DE002D4527 /* MainMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7762A06C6DE002D4527 /* MainMessageView.swift */; };
+		8176D78C2A06C6DE002D4527 /* ZhalobaQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7782A06C6DE002D4527 /* ZhalobaQuestion.swift */; };
+		8176D78D2A06C6DE002D4527 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7792A06C6DE002D4527 /* ChatView.swift */; };
+		8176D78E2A06C6DE002D4527 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D77A2A06C6DE002D4527 /* Video.swift */; };
+		8176D78F2A06C6DE002D4527 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D77B2A06C6DE002D4527 /* Color.swift */; };
+		8176D7902A06C6DE002D4527 /* Zhaloba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D77C2A06C6DE002D4527 /* Zhaloba.swift */; };
+		8176D7912A06C6DE002D4527 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D77E2A06C6DE002D4527 /* UserViewModel.swift */; };
+		8176D7922A06C6DE002D4527 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D77F2A06C6DE002D4527 /* ChatViewModel.swift */; };
+		8176D7932A06C6DE002D4527 /* ModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D7812A06C6DE002D4527 /* ModelUser.swift */; };
+		8176D7962A06C75F002D4527 /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8176D7952A06C75F002D4527 /* AgoraUIKit */; };
+		8176D7992A06C7B6002D4527 /* SwiftUICalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8176D7982A06C7B6002D4527 /* SwiftUICalendar */; };
+		8176D79B2A06E6B2002D4527 /* PickerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D79A2A06E6B2002D4527 /* PickerNew.swift */; };
 		81E2A9CD2A061324002D5BEB /* OpenControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9CC2A061324002D5BEB /* OpenControlApp.swift */; };
 		81E2A9CF2A061324002D5BEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9CE2A061324002D5BEB /* ContentView.swift */; };
 		81E2A9D12A061325002D5BEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E2A9D02A061325002D5BEB /* Assets.xcassets */; };
 		81E2A9D42A061325002D5BEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E2A9D32A061325002D5BEB /* Preview Assets.xcassets */; };
 		81E2A9D62A061325002D5BEB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9D52A061325002D5BEB /* Persistence.swift */; };
 		81E2A9D92A061325002D5BEB /* OpenControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9D72A061325002D5BEB /* OpenControl.xcdatamodeld */; };
+		81E2A9E12A061481002D5BEB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2A9E02A061481002D5BEB /* FirebaseAuth */; };
+		81E2A9E32A061481002D5BEB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2A9E22A061481002D5BEB /* FirebaseDatabase */; };
+		81E2A9E52A061481002D5BEB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2A9E42A061481002D5BEB /* FirebaseFirestore */; };
+		81E2A9E72A061481002D5BEB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2A9E62A061481002D5BEB /* FirebaseStorage */; };
+		81E2A9E92A061494002D5BEB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9E82A061494002D5BEB /* SwiftUIView.swift */; };
+		81E2A9EB2A0618B2002D5BEB /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9EA2A0618B2002D5BEB /* Api.swift */; };
+		81E2A9ED2A06190A002D5BEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */; };
+		81E8FC4E2A07F2AB00DF0653 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8FC4D2A07F2AB00DF0653 /* VideoPicker.swift */; };
+		81E8FC502A07FA7B00DF0653 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8FC4F2A07FA7B00DF0653 /* DocumentPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		813F72E32A0A32FB00136610 /* NoteSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteSheet.swift; sourceTree = "<group>"; };
+		814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		814E6ABB2A0973EB00BB6DE2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8176D75D2A06C4D9002D4527 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		8176D75E2A06C4DA002D4527 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		8176D75F2A06C4DA002D4527 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		8176D7602A06C4DA002D4527 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		8176D7622A06C4DA002D4527 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		8176D7632A06C4DA002D4527 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		8176D76C2A06C56C002D4527 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8176D76E2A06C6DE002D4527 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		8176D76F2A06C6DE002D4527 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		8176D7702A06C6DE002D4527 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		8176D7712A06C6DE002D4527 /* NewNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		8176D7722A06C6DE002D4527 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		8176D7732A06C6DE002D4527 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		8176D7742A06C6DE002D4527 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8176D7752A06C6DE002D4527 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8176D7762A06C6DE002D4527 /* MainMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMessageView.swift; sourceTree = "<group>"; };
+		8176D7782A06C6DE002D4527 /* ZhalobaQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZhalobaQuestion.swift; sourceTree = "<group>"; };
+		8176D7792A06C6DE002D4527 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8176D77A2A06C6DE002D4527 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		8176D77B2A06C6DE002D4527 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		8176D77C2A06C6DE002D4527 /* Zhaloba.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zhaloba.swift; sourceTree = "<group>"; };
+		8176D77E2A06C6DE002D4527 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8176D77F2A06C6DE002D4527 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		8176D7812A06C6DE002D4527 /* ModelUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
+		8176D79A2A06E6B2002D4527 /* PickerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerNew.swift; sourceTree = "<group>"; };
 		81E2A9C92A061324002D5BEB /* OpenControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E2A9CC2A061324002D5BEB /* OpenControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenControlApp.swift; sourceTree = "<group>"; };
 		81E2A9CE2A061324002D5BEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +91,11 @@
 		81E2A9D32A061325002D5BEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81E2A9D52A061325002D5BEB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		81E2A9D82A061325002D5BEB /* OpenControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenControl.xcdatamodel; sourceTree = "<group>"; };
+		81E2A9E82A061494002D5BEB /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		81E2A9EA2A0618B2002D5BEB /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81E8FC4D2A07F2AB00DF0653 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		81E8FC4F2A07FA7B00DF0653 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,12 +103,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E2A9E32A061481002D5BEB /* FirebaseDatabase in Frameworks */,
+				81E2A9E72A061481002D5BEB /* FirebaseStorage in Frameworks */,
+				81E2A9E12A061481002D5BEB /* FirebaseAuth in Frameworks */,
+				81E2A9E52A061481002D5BEB /* FirebaseFirestore in Frameworks */,
+				8176D7992A06C7B6002D4527 /* SwiftUICalendar in Frameworks */,
+				8176D7962A06C75F002D4527 /* AgoraUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8176D76D2A06C6DE002D4527 /* Final */ = {
+			isa = PBXGroup;
+			children = (
+				81E2A9EA2A0618B2002D5BEB /* Api.swift */,
+				8176D76E2A06C6DE002D4527 /* TabBar.swift */,
+				8176D76F2A06C6DE002D4527 /* Notes.swift */,
+				8176D7702A06C6DE002D4527 /* Chat.swift */,
+				8176D7712A06C6DE002D4527 /* NewNote.swift */,
+				8176D7722A06C6DE002D4527 /* Home.swift */,
+				8176D7732A06C6DE002D4527 /* Profile.swift */,
+				8176D7742A06C6DE002D4527 /* ImagePicker.swift */,
+				8176D7752A06C6DE002D4527 /* Note.swift */,
+				8176D7762A06C6DE002D4527 /* MainMessageView.swift */,
+				8176D7782A06C6DE002D4527 /* ZhalobaQuestion.swift */,
+				8176D7792A06C6DE002D4527 /* ChatView.swift */,
+				8176D77A2A06C6DE002D4527 /* Video.swift */,
+				8176D77B2A06C6DE002D4527 /* Color.swift */,
+				8176D77C2A06C6DE002D4527 /* Zhaloba.swift */,
+				81E8FC4D2A07F2AB00DF0653 /* VideoPicker.swift */,
+				81E8FC4F2A07FA7B00DF0653 /* DocumentPicker.swift */,
+				814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */,
+				814E6ABB2A0973EB00BB6DE2 /* Localization.swift */,
+				813F72E32A0A32FB00136610 /* NoteSheet.swift */,
+			);
+			path = Final;
+			sourceTree = "<group>";
+		};
+		8176D77D2A06C6DE002D4527 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8176D77E2A06C6DE002D4527 /* UserViewModel.swift */,
+				8176D77F2A06C6DE002D4527 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8176D7802A06C6DE002D4527 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8176D7812A06C6DE002D4527 /* ModelUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		81E2A9C02A061324002D5BEB = {
 			isa = PBXGroup;
 			children = (
@@ -55,12 +178,26 @@
 		81E2A9CB2A061324002D5BEB /* OpenControl */ = {
 			isa = PBXGroup;
 			children = (
+				8176D76C2A06C56C002D4527 /* Info.plist */,
+				8176D75D2A06C4D9002D4527 /* Manrope-Bold.ttf */,
+				8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */,
+				8176D7602A06C4DA002D4527 /* Manrope-ExtraLight.ttf */,
+				8176D75E2A06C4DA002D4527 /* Manrope-Light.ttf */,
+				8176D7622A06C4DA002D4527 /* Manrope-Medium.ttf */,
+				8176D75F2A06C4DA002D4527 /* Manrope-Regular.ttf */,
+				8176D7632A06C4DA002D4527 /* Manrope-SemiBold.ttf */,
+				81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */,
 				81E2A9CC2A061324002D5BEB /* OpenControlApp.swift */,
 				81E2A9CE2A061324002D5BEB /* ContentView.swift */,
 				81E2A9D02A061325002D5BEB /* Assets.xcassets */,
 				81E2A9D52A061325002D5BEB /* Persistence.swift */,
 				81E2A9D72A061325002D5BEB /* OpenControl.xcdatamodeld */,
 				81E2A9D22A061325002D5BEB /* Preview Content */,
+				81E2A9E82A061494002D5BEB /* SwiftUIView.swift */,
+				8176D76D2A06C6DE002D4527 /* Final */,
+				8176D7802A06C6DE002D4527 /* Model */,
+				8176D77D2A06C6DE002D4527 /* ViewModel */,
+				8176D79A2A06E6B2002D4527 /* PickerNew.swift */,
 			);
 			path = OpenControl;
 			sourceTree = "<group>";
@@ -89,6 +226,14 @@
 			dependencies = (
 			);
 			name = OpenControl;
+			packageProductDependencies = (
+				81E2A9E02A061481002D5BEB /* FirebaseAuth */,
+				81E2A9E22A061481002D5BEB /* FirebaseDatabase */,
+				81E2A9E42A061481002D5BEB /* FirebaseFirestore */,
+				81E2A9E62A061481002D5BEB /* FirebaseStorage */,
+				8176D7952A06C75F002D4527 /* AgoraUIKit */,
+				8176D7982A06C7B6002D4527 /* SwiftUICalendar */,
+			);
 			productName = OpenControl;
 			productReference = 81E2A9C92A061324002D5BEB /* OpenControl.app */;
 			productType = "com.apple.product-type.application";
@@ -114,9 +259,14 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ru,
 			);
 			mainGroup = 81E2A9C02A061324002D5BEB;
+			packageReferences = (
+				81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
+				8176D7972A06C7B6002D4527 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */,
+			);
 			productRefGroup = 81E2A9CA2A061324002D5BEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,7 +282,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				81E2A9D42A061325002D5BEB /* Preview Assets.xcassets in Resources */,
+				8176D7652A06C4DA002D4527 /* Manrope-Bold.ttf in Resources */,
+				8176D7642A06C4DA002D4527 /* Manrope-ExtraBold.ttf in Resources */,
+				8176D76B2A06C4DA002D4527 /* Manrope-SemiBold.ttf in Resources */,
+				8176D76A2A06C4DA002D4527 /* Manrope-Medium.ttf in Resources */,
 				81E2A9D12A061325002D5BEB /* Assets.xcassets in Resources */,
+				8176D7662A06C4DA002D4527 /* Manrope-Light.ttf in Resources */,
+				8176D7682A06C4DA002D4527 /* Manrope-ExtraLight.ttf in Resources */,
+				81E2A9ED2A06190A002D5BEB /* GoogleService-Info.plist in Resources */,
+				8176D7672A06C4DA002D4527 /* Manrope-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +301,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8176D7882A06C6DE002D4527 /* ImagePicker.swift in Sources */,
+				8176D7912A06C6DE002D4527 /* UserViewModel.swift in Sources */,
+				814E6ABC2A0973EB00BB6DE2 /* Localization.swift in Sources */,
+				8176D7902A06C6DE002D4527 /* Zhaloba.swift in Sources */,
+				81E2A9EB2A0618B2002D5BEB /* Api.swift in Sources */,
+				81E8FC502A07FA7B00DF0653 /* DocumentPicker.swift in Sources */,
+				8176D78A2A06C6DE002D4527 /* MainMessageView.swift in Sources */,
+				813F72E42A0A32FB00136610 /* NoteSheet.swift in Sources */,
+				814E6ABA2A0969BD00BB6DE2 /* NoteRow.swift in Sources */,
+				8176D7872A06C6DE002D4527 /* Profile.swift in Sources */,
+				8176D7922A06C6DE002D4527 /* ChatViewModel.swift in Sources */,
+				8176D78D2A06C6DE002D4527 /* ChatView.swift in Sources */,
+				81E8FC4E2A07F2AB00DF0653 /* VideoPicker.swift in Sources */,
 				81E2A9D62A061325002D5BEB /* Persistence.swift in Sources */,
+				8176D7852A06C6DE002D4527 /* NewNote.swift in Sources */,
+				8176D7862A06C6DE002D4527 /* Home.swift in Sources */,
 				81E2A9CF2A061324002D5BEB /* ContentView.swift in Sources */,
 				81E2A9CD2A061324002D5BEB /* OpenControlApp.swift in Sources */,
+				8176D79B2A06E6B2002D4527 /* PickerNew.swift in Sources */,
+				8176D7842A06C6DE002D4527 /* Chat.swift in Sources */,
+				8176D7892A06C6DE002D4527 /* Note.swift in Sources */,
 				81E2A9D92A061325002D5BEB /* OpenControl.xcdatamodeld in Sources */,
+				8176D78F2A06C6DE002D4527 /* Color.swift in Sources */,
+				81E2A9E92A061494002D5BEB /* SwiftUIView.swift in Sources */,
+				8176D7932A06C6DE002D4527 /* ModelUser.swift in Sources */,
+				8176D78C2A06C6DE002D4527 /* ZhalobaQuestion.swift in Sources */,
+				8176D78E2A06C6DE002D4527 /* Video.swift in Sources */,
+				8176D7822A06C6DE002D4527 /* TabBar.swift in Sources */,
+				8176D7832A06C6DE002D4527 /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +461,9 @@
 				DEVELOPMENT_TEAM = 6CCCYRW6R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = OpenControl/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "to see";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "to see";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -307,7 +492,9 @@
 				DEVELOPMENT_TEAM = 6CCCYRW6R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = OpenControl/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "to see";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "to see";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -347,6 +534,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		8176D7972A06C7B6002D4527 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GGJJack/SwiftUICalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.6;
+			};
+		};
+		81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8176D7952A06C75F002D4527 /* AgoraUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			productName = AgoraUIKit;
+		};
+		8176D7982A06C7B6002D4527 /* SwiftUICalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8176D7972A06C7B6002D4527 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */;
+			productName = SwiftUICalendar;
+		};
+		81E2A9E02A061481002D5BEB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		81E2A9E22A061481002D5BEB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		81E2A9E42A061481002D5BEB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		81E2A9E62A061481002D5BEB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		81E2A9D72A061325002D5BEB /* OpenControl.xcdatamodeld */ = {
