@@ -14,6 +14,8 @@ import FirebaseFirestore
 
 
 struct MainMessageView: View {
+    @State var show : Bool = false
+
     
     @ObservedObject private var firebase = MainMessagesViewModel()
     
@@ -67,9 +69,32 @@ struct MainMessageView: View {
                     customNavBar.ignoresSafeArea()
                     
                     ScrollView {
+                        NavigationLink(destination: {
+                            BotView(chat: BotViewModel())
+                        }, label: {
+                            VStack{
+                                HStack(spacing: 16) {
+                                    //Image(systemName: "person.fill").font(.system(size: 32)).foregroundColor(.black).padding(8).overlay(RoundedRectangle(cornerRadius: 44).stroke(.black, lineWidth: 1))
+                                    
+                                    VStack(alignment: .leading){
+                                        Text("Bot").font(.system(size: 16, weight: .bold)).foregroundColor(.blue)
+                                        
+                                        Text("Message sent to user").font(.system(size: 14)).foregroundColor(.gray)
+                                    }
+                                    Spacer()
+                                    
+                                    
+                                    
+                                }
+                                
+                                Divider().padding(.vertical)
+                            }.padding(.horizontal)
+                            //.navigationTitle( "Main Messages View")
+                        })
                         ForEach(firebase.users) { user in
                             NavigationLink(destination: {
-                                ChatView(user: user)
+                               // ChatView(user: user)
+                                ChatView(user: user, chat: ChatViewModel(user: user), show : $show)
                             }, label: {
                                 VStack{
                                     HStack(spacing: 16) {

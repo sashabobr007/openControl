@@ -7,6 +7,16 @@
 
 import Foundation
 
+enum Role{
+    case buisnes, inspector
+}
+
+struct UserRole{
+    static var role : Role = .buisnes
+    static var uid = ""
+    
+}
+
 
 struct User : Identifiable{
     let uid, email : String

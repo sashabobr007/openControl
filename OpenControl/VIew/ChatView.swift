@@ -26,13 +26,15 @@ struct RoundedCorner: Shape {
 
 struct ChatView: View {
     var user : User?
-    let id : String?
-    init(user: User?) {
-        self.user = user
-        self.chat = ChatViewModel(user: user)
-        self.id = Database.shared.getUuid()
-        //print(self.id!)
-    }
+    let id = Database.shared.getUuid()
+   
+//    init(user: User?) {
+//        self.user = user
+//        self.chat = ChatViewModel(user: user)
+//        self.id = Database.shared.getUuid()
+//
+//        //print(self.id!)
+//    }
     @State var selectedItems: [PhotosPickerItem] = []
 
     @State private var image : UIImage?
@@ -45,12 +47,25 @@ struct ChatView: View {
     @State private var showingDocumentPicker = false
     
     @State var chatText = ""
-    @ObservedObject private var chat : ChatViewModel
+    @ObservedObject var chat : ChatViewModel
     
     @State var mDate = ""
     
+    @Binding var show : Bool
+
+    
     var body: some View {
         VStack{
+            Button {
+                show.toggle()
+            } label: {
+                ZStack{
+                   
+                    Text("Закрыть чат").foregroundColor(mainColorOrange1)
+                }
+
+            }.frame(width: 100, height: 100)
+
             ScrollView{
                 ScrollViewReader{ scrollViewProxy in
                     VStack{
@@ -59,7 +74,7 @@ struct ChatView: View {
                         
                         VStack{
                             
-                            if message.fromId == self.id!{
+                            if message.fromId == self.id{
                                 
                                 HStack{
                                     Spacer()
@@ -76,12 +91,12 @@ struct ChatView: View {
                                             
                                         }
                                         else{
-                                            AsyncImage(url: URL(string: message.docUrl), content: { image in
-                                                image.resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 10))
-                                                
-                                            }, placeholder: {
-                                                ProgressView()
-                                            }).frame(width: 100, height: 100)
+//                                            AsyncImage(url: URL(string: message.docUrl), content: { image in
+//                                                image.resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 10))
+//
+//                                            }, placeholder: {
+//                                                ProgressView()
+//                                            }).frame(width: 100, height: 100)
                                         }
                                     }
                                 }.padding(.horizontal).padding(.top, 8)
@@ -127,7 +142,7 @@ struct ChatView: View {
                         }
                     }
                     .onAppear {
-                        self.mDate = chat.chatMessages[0].timeDay
+                       // self.mDate = chat.chatMessages[0].timeDay
                     }
                 
                 
@@ -174,35 +189,35 @@ struct ChatView: View {
 //
 //                    }
                     
-                    Menu {
-                        
-                        
-                        
-                        Button {
-                            showSheet = true
-                        } label: {
-                            Image(systemName: "photo")
-                        }
-                        
-                        Button {
-                            self.showingDocumentPicker = true
-
-                        } label: {
-                            Image(systemName: "doc.fill.badge.plus")
-                        }
-                        
-                        Button {
-                            self.showingVideoPicker = true
-
-                        } label: {
-                            Image(systemName: "video.and.waveform")
-                            
-                        }
-
-                        
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+//                    Menu {
+//
+//
+//
+//                        Button {
+//                            showSheet = true
+//                        } label: {
+//                            Image(systemName: "photo")
+//                        }
+//
+//                        Button {
+//                            self.showingDocumentPicker = true
+//
+//                        } label: {
+//                            Image(systemName: "doc.fill.badge.plus")
+//                        }
+//
+//                        Button {
+//                            self.showingVideoPicker = true
+//
+//                        } label: {
+//                            Image(systemName: "video.and.waveform")
+//
+//                        }
+//
+//
+//                    } label: {
+//                        Image(systemName: "square.and.arrow.up")
+//                    }
                     
 //                    Button {
 //                        showSheet = true
@@ -214,12 +229,7 @@ struct ChatView: View {
                     
                     ZStack{
                         TextField("Написать сообщение", text: $chat.text).textFieldStyle(.roundedBorder).clipShape(Capsule())
-                        //.opacity(chat.text.isEmpty ? 0.5 : 1)
-                        //                Text("Enter here")
-                        //                ZStack{
-                        //
-                        //                    TextEditor(text: $chatText).opacity(chatText.isEmpty ? 0.5 : 1)
-                        //                }.frame(height: 30)
+                       
                         HStack{
                             Spacer()
                             Button {
@@ -289,10 +299,10 @@ struct ChatView: View {
     
 }
 
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView{
-            ChatView(user: User(uid: "sdf", email: "test"))
-        }
-    }
-}
+//struct ChatView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigationView{
+//            ChatView(user: User(uid: "sdf", email: "test"))
+//        }
+//    }
+//}

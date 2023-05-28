@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
+import Firebase
 import FirebaseCore
+import FirebaseFirestore
+import FirebaseStorage
 
 
 class AppDelegate: NSObject, UIApplicationDelegate {
@@ -25,14 +28,27 @@ struct OpenControlApp: App {
   // register app delegate for Firebase setup
   @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
-
+@State private var login = ""
+   
   var body: some Scene {
     WindowGroup {
-      NavigationView {
-        //SwiftUIView()
-          TabBar()
-          //PickerNew()
-      }
+        MainView()
+//      NavigationView {
+//          if login.count != 0{
+//              TabBar()
+//          }else{
+//              //SwiftUIView(email1: $login)
+//              Enter(login: $login)
+//          }
+//
+//
+//          //TabBar()
+//
+//          //PickerNew()
+//      }.onAppear {
+//          login = Auth.auth().currentUser?.uid ?? ""
+//          print(login)
+//      }
     }
   }
 }

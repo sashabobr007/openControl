@@ -27,7 +27,7 @@ struct NoteSheet: View {
                         }
                     }else{
                         ZStack{
-                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorPurple)
+                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorOrange1)
                             Text("Консультация").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
                         }
                     }
@@ -36,7 +36,7 @@ struct NoteSheet: View {
                 ZStack{
                     if detail.type1 {
                         ZStack{
-                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorPurple)
+                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorOrange1)
                             Text("Проверка").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
                         }
                     }else{
@@ -66,7 +66,7 @@ struct NoteSheet: View {
                         }
                     }else{
                         ZStack{
-                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorPurple)
+                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorOrange1)
                             Text("Видео-конференция").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
                         }
                     }
@@ -75,7 +75,7 @@ struct NoteSheet: View {
                 
                     if detail.type2 {
                         ZStack{
-                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorPurple)
+                            RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(mainColorOrange1)
                             Text("Визит").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
                         }
                     }else{
@@ -84,7 +84,7 @@ struct NoteSheet: View {
                         } label: {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 12).frame(width: 173.44, height: 34).foregroundColor(.white).overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(hex: "E0E0E0") ?? .black, lineWidth: 1))
-                                Text("Визит").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(mainColorPurple)
+                                Text("Визит").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(mainColorOrange1)
                             }
                         }
                     }
@@ -129,7 +129,7 @@ struct NoteSheet: View {
                             dismiss()
                     }label: {
                         ZStack{
-                            RoundedRectangle(cornerRadius: 12).foregroundColor(mainColorPurple).frame(width: 162.41, height: 50)
+                            RoundedRectangle(cornerRadius: 12).foregroundColor(mainColorOrange1).frame(width: 162.41, height: 50)
                             Text("Применить").foregroundColor(.white)
                             
                         }

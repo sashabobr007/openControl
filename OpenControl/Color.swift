@@ -46,11 +46,13 @@ extension Color {
 }
 
 
-let mainColorOrange = Color(hex: "FBEEDC")
+let mainColorOrange = Color(hex: "E35036")?.opacity(0.4)
 
-let mainColorOrange1 = Color(hex: "F77323")
+let mainColorGray = Color(hex: "DADADA")?.opacity(0.33)
 
-let mainColorOrange2 = Color(hex: "FDCD7B")
+let mainColorOrange1 = Color(hex: "E35036")
+
+let mainColorOrange2 = Color(hex: "FFE0DB")?.opacity(0.31)
 
 let mainColorOrange3 = Color(hex: "FEE0C4")
 
@@ -68,7 +70,7 @@ let mainColorBlue1 = Color(hex: "00AEAC")
 
 let mainColorPurple = Color(hex: "A2228F")
 
-let mainColorPurple1 = Color(uiColor: UIColor(red: 0.635, green: 0.133, blue: 0.561, alpha: 0.25))
+let mainColorOrange11 = Color(uiColor: UIColor(red: 0.635, green: 0.133, blue: 0.561, alpha: 0.25))
 
 
 
