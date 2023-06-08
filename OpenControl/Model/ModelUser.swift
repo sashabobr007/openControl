@@ -14,7 +14,7 @@ enum Role{
 struct UserRole{
     static var role : Role = .buisnes
     static var uid = ""
-    
+    static var name = ""
 }
 
 

@@ -85,7 +85,7 @@ struct Note: View {
 
                 ScrollView{
                     Group{
-                        FieldTextNew(text: "Kонтрольно-надзорный орган", textHide: app.withWho)
+                        FieldTextNew(text: "Kонтрольно-надзорный орган", textHide: app.knoName)
                         
                     }.padding(.horizontal, 40)
 

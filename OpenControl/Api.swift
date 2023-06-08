@@ -76,7 +76,8 @@ struct AppointmentList: Decodable {
 
 // MARK: - Appointment
 struct Appointment: Decodable {
-    let id, time, status, withWho: String
+    let id, time, status, knoName, measureName: String
+    let knoId, measureId : Int
 }
 
 

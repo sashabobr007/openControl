@@ -56,7 +56,7 @@ let mainColorOrange2 = Color(hex: "FFE0DB")?.opacity(0.31)
 
 let mainColorOrange3 = Color(hex: "FEE0C4")
 
-let mainColorRed = Color(hex: "F9EBEC")
+let mainColorRed = Color(hex: "FAEEEE")
 
 let mainColorRed1 = Color(hex: "D73C41")
 

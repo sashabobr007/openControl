@@ -13,12 +13,14 @@ struct TabBar: View {
     var body: some View {
         TabView (selection: $selectedTab){
             
-            
-            Home().tag("2").tabItem({
-                Image(systemName: "house")
+            if UserRole.role == .buisnes{
                 
-
-            })
+                Home().tag("2").tabItem({
+                    Image(systemName: "house")
+                    
+                    
+                })
+            }
             Notes().tag("3").tabItem({
                 Image(systemName: "square.and.pencil").foregroundColor(.blue)
                 
@@ -29,12 +31,13 @@ struct TabBar: View {
 //
 //
 //            })
-            
-            BotView(chat: BotViewModel()).tag("4").tabItem({
-                Image(systemName: "message")
-                
-
-            })
+            if UserRole.role == .buisnes{
+                BotView(chat: BotViewModel()).tag("4").tabItem({
+                    Image(systemName: "message")
+                    
+                    
+                })
+            }
             if UserRole.role == .inspector{
                 ProfileInspector(login: $login).tag("5").tabItem({
                     Image(systemName: "person")

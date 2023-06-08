@@ -13,15 +13,17 @@ struct AddBuisness: View {
     @State private var vid = ""
     @State private var pod = ""
     @State private var dop = ""
+    @ObservedObject private var vm = ProfilViewModel()
+
     
     var body: some View {
         VStack{
             
-            
+            Text("Добавить бизнес").font(Font.custom("Manrope", size: 22)).fontWeight(.bold).padding(.bottom, 1)
+            Capsule().foregroundColor(mainColorOrange1).frame(width: 200, height: 5).padding(.horizontal, 30).padding(.top, 1)
             ScrollView{
                 
-                Text("Добавить бизнес").font(Font.custom("Manrope", size: 22)).fontWeight(.bold).padding(.bottom, 1)
-                Capsule().foregroundColor(mainColorOrange1).frame(width: 200, height: 5).padding(.horizontal, 30).padding(.top, 1)
+                
                 
                 Text("Добавьте информацию о вашем бизнесе и вы получите доступ ко всем функцциям системы").font(Font.custom("Manrope", size: 12)).fontWeight(.medium).padding(.bottom, 1).padding(.horizontal).padding(.bottom)
                 
@@ -50,7 +52,7 @@ struct AddBuisness: View {
                 }
                 
                 Button {
-                    
+                    vm.addBuisness()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 12).frame(width: 162, height: 50).foregroundColor(mainColorOrange1)

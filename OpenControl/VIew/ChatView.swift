@@ -271,27 +271,27 @@ struct ChatView: View {
         }
         
         //.navigationTitle(user?.email ?? "email").navigationBarTitleDisplayMode(.inline)
-        .toolbar(content: {
-            HStack{
-                VStack(alignment: .leading){
-                    Text("Полина Кузьминкина")
-                    Text("инспектор")
-
-                }
-                Text("             ")
-                Spacer()
-                
-                NavigationLink {
-                    Video(user: user)
-                } label: {
-                    ZStack{
-                        //  Circle().foregroundColor(Color(hex: "DADADA")).frame(width: 35, height: 35)
-                        Image(systemName: "video.and.waveform").foregroundColor(mainColorBlue1)
-                    }
-                }
-            }
-
-        })
+//        .toolbar(content: {
+//            HStack{
+//                VStack(alignment: .leading){
+//                    Text("Полина Кузьминкина")
+//                    Text("инспектор")
+//
+//                }
+//                Text("             ")
+//                Spacer()
+//
+//                NavigationLink {
+//                    Video(user: user)
+//                } label: {
+//                    ZStack{
+//                        //  Circle().foregroundColor(Color(hex: "DADADA")).frame(width: 35, height: 35)
+//                        Image(systemName: "video.and.waveform").foregroundColor(mainColorBlue1)
+//                    }
+//                }
+//            }
+//
+//        })
         
         
     }

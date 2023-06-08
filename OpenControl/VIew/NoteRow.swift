@@ -20,31 +20,55 @@ struct NoteRow: View {
     
     var body: some View {
         ZStack{
-            RoundedRectangle(cornerRadius: 12).foregroundColor(.white).frame(width: 368, height: 150)
+            RoundedRectangle(cornerRadius: 12).foregroundColor(.white).frame(width: 368, height: 170)
             VStack{
                 VStack{
-                    VStack{
+                    VStack (spacing: 15){
+                        HStack{
+                            Text("Запись на консультацию").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.black)
+                            Spacer()
+                        }
                         HStack{
                             
-                            Text(app.withWho).font(Font.custom("Manrope", size: 14)).fontWeight(.medium).foregroundColor(.black)
+                            Text(app.knoName).font(Font.custom("Manrope", size: 14)).fontWeight(.ultraLight).foregroundColor(.black)
                             Spacer()
 
                         }
                         HStack{
                             
                             
-                            Text(app.status).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black).padding(.vertical)
+                            Text(date).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black)
+                            
+                            Text(time).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black).padding(.leading, 20)
+                            
                             Spacer()
 
                         }
+                        
+                        HStack{
+                            if app.status == "AGREED"{
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 50).frame(width: 190, height: 24).foregroundColor(Color(hex: "44C863"))
+                                    Text("Запись подтверждена").foregroundColor(.white)
+                                }
+                            }else{
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 50).frame(width: 210, height: 24).foregroundColor(Color(hex: "FFBF41"))
+                                    Text("Ожидает подтверждения").foregroundColor(.white)
+                                }
+                            }
+                            
+                            Spacer()
+                        }
+                        
                         }.padding(.leading, 40)
                     }
                     
-                    HStack{
-                        Text(time).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black)
-                        Spacer()
-                        Text(date).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black).padding(.trailing, 20)
-                    }.padding(.horizontal, 40)
+//                    HStack{
+//                        Text(time).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black)
+//                        Spacer()
+//                        Text(date).font(Font.custom("Manrope", size: 14)).fontWeight(.light).foregroundColor(.black).padding(.trailing, 20)
+//                    }.padding(.horizontal, 40)
                     
                 }
                 

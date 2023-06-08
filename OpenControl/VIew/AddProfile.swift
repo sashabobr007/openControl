@@ -15,39 +15,36 @@ struct AddProfile: View {
     @State private var dop = ""
     
     @ObservedObject private var vm = ProfilViewModel()
+    @State private var presentAlert = false
 
     
     var body: some View {
         VStack{
             
-            
+            Text("Сведения о пользователе").font(Font.custom("Manrope", size: 22)).fontWeight(.bold).padding(.bottom, 1)
+            Capsule().foregroundColor(mainColorOrange1).frame(width: 300, height: 5).padding(.horizontal, 30).padding(.top, 1).padding(.bottom)
             ScrollView{
-                
-                Text("Сведения о пользователе").font(Font.custom("Manrope", size: 22)).fontWeight(.bold).padding(.bottom, 1)
-                Capsule().foregroundColor(mainColorOrange1).frame(width: 300, height: 5).padding(.horizontal, 30).padding(.top, 1).padding(.bottom)
-                
+ 
+                FieldText(textSelect: $vm.lastName, text: "Фамилия", textHide: "Введите вашу фамилию")
                 
                 
-                FieldText(textSelect: $vm.lastName, text: "Фамилия", textHide: "Введите название бизнеса")
-                
-                
-                FieldText(textSelect: $vm.firstName, text: "Имя", textHide: "Введите вид деятельности")
+                FieldText(textSelect: $vm.firstName, text: "Имя", textHide: "Введите ваше имя деятельности")
                
                 
-                FieldText(textSelect: $vm.surName, text: "Отчетство", textHide: "выберите орган контроля")
+                FieldText(textSelect: $vm.surName, text: "Отчетство", textHide: "Введите ваше отчество")
                 
                 
-                FieldText(textSelect: $organ, text: "Пол", textHide: "Введите юридический адрес")
+               // FieldText(textSelect: $organ, text: "Пол", textHide: "Введите юридический адрес")
                 
-                FieldText(textSelect: $vm.inn, text: "ИНН", textHide: "выберите орган контроля")
-                FieldText(textSelect: $vm.snils, text: "СНИЛС", textHide: "Введите юридический адрес")
+                FieldText(textSelect: $vm.inn, text: "ИНН", textHide: "Введите ваш ИНН")
+                FieldText(textSelect: $vm.snils, text: "СНИЛС", textHide: "Введите ваш снилс")
                 
                 Text("Контактная информация").font(Font.custom("Manrope", size: 18)).fontWeight(.bold).padding(.vertical).padding(.trailing, 130)
                 
                 VStack{
-                    FieldText(textSelect: $organ, text: "Телефон", textHide: "выберите орган контроля")
+                    FieldText(textSelect: $organ, text: "Телефон", textHide: "Введите ваш телефон")
                     
-                    FieldText(textSelect: $organ, text: "Почта", textHide: "Введите юридический адрес")
+                    FieldText(textSelect: $organ, text: "Почта", textHide: "Введите вашу почту")
                 }
                 
                 
@@ -59,7 +56,7 @@ struct AddProfile: View {
             
             HStack{
                 Button {
-                    
+                    vm.fetchCurrentUser()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 12).frame(width: 162, height: 50).foregroundColor(mainColorGray)
@@ -69,6 +66,7 @@ struct AddProfile: View {
                 
                 Button {
                     vm.addCurrentUser()
+                    self.presentAlert.toggle()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 12).frame(width: 162, height: 50).foregroundColor(mainColorOrange1)
@@ -79,7 +77,12 @@ struct AddProfile: View {
             }
             
             
+        }.alert(isPresented: $presentAlert) {
+            Alert(
+                title: Text("Данные успешно обновлены!")
+            )
         }
+
     }
 }
 

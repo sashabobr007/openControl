@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
 
 struct ProfileInspector: View {
     @State private var presentAlert = false
@@ -76,8 +79,8 @@ struct ProfileInspector: View {
                     title: Text("Выход"),
                     message: Text("Вы уверены, что хотите выйти?"),
                     primaryButton: .destructive(Text("Да"), action: {
-//                        let auth = Auth.auth()
-//                        try? auth.signOut()
+                        let auth = Auth.auth()
+                        try? auth.signOut()
                         login = ""
                         
                     }),

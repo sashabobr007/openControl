@@ -13,6 +13,8 @@
 		81482C272A22328900B0A791 /* NewNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81482C262A22328900B0A791 /* NewNoteViewModel.swift */; };
 		814E6ABA2A0969BD00BB6DE2 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */; };
 		814E6ABC2A0973EB00BB6DE2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6ABB2A0973EB00BB6DE2 /* Localization.swift */; };
+		815435C92A30C29B00CA4734 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815435C82A30C29B00CA4734 /* GoogleService-Info.plist */; };
+		815435CC2A30CDC900CA4734 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = 815435CB2A30CDC900CA4734 /* HalfASheet */; };
 		8154DDA32A13C89200B76173 /* BotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154DDA22A13C89200B76173 /* BotViewModel.swift */; };
 		8154DDA52A13C9C800B76173 /* BotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154DDA42A13C9C800B76173 /* BotView.swift */; };
 		8176D7642A06C4DA002D4527 /* Manrope-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */; };
@@ -59,7 +61,6 @@
 		81E2A9E72A061481002D5BEB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 81E2A9E62A061481002D5BEB /* FirebaseStorage */; };
 		81E2A9E92A061494002D5BEB /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9E82A061494002D5BEB /* SwiftUIView.swift */; };
 		81E2A9EB2A0618B2002D5BEB /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2A9EA2A0618B2002D5BEB /* Api.swift */; };
-		81E2A9ED2A06190A002D5BEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */; };
 		81E758B72A23ADC800A92EC1 /* NotesViewVodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E758B62A23ADC800A92EC1 /* NotesViewVodel.swift */; };
 		81E758B92A23B9E500A92EC1 /* NoteRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E758B82A23B9E500A92EC1 /* NoteRowViewModel.swift */; };
 		81E8FC4E2A07F2AB00DF0653 /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E8FC4D2A07F2AB00DF0653 /* VideoPicker.swift */; };
@@ -73,6 +74,7 @@
 		81482C262A22328900B0A791 /* NewNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewModel.swift; sourceTree = "<group>"; };
 		814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		814E6ABB2A0973EB00BB6DE2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		815435C82A30C29B00CA4734 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8154DDA22A13C89200B76173 /* BotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotViewModel.swift; sourceTree = "<group>"; };
 		8154DDA42A13C9C800B76173 /* BotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotView.swift; sourceTree = "<group>"; };
 		8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -115,7 +117,6 @@
 		81E2A9D82A061325002D5BEB /* OpenControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenControl.xcdatamodel; sourceTree = "<group>"; };
 		81E2A9E82A061494002D5BEB /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		81E2A9EA2A0618B2002D5BEB /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81E758B62A23ADC800A92EC1 /* NotesViewVodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewVodel.swift; sourceTree = "<group>"; };
 		81E758B82A23B9E500A92EC1 /* NoteRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRowViewModel.swift; sourceTree = "<group>"; };
 		81E8FC4D2A07F2AB00DF0653 /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 				81E2A9E32A061481002D5BEB /* FirebaseDatabase in Frameworks */,
 				81E2A9E72A061481002D5BEB /* FirebaseStorage in Frameworks */,
 				81E2A9E12A061481002D5BEB /* FirebaseAuth in Frameworks */,
+				815435CC2A30CDC900CA4734 /* HalfASheet in Frameworks */,
 				81E2A9E52A061481002D5BEB /* FirebaseFirestore in Frameworks */,
 				8176D7992A06C7B6002D4527 /* SwiftUICalendar in Frameworks */,
 				8176D7962A06C75F002D4527 /* AgoraUIKit in Frameworks */,
@@ -223,11 +225,11 @@
 				8176D75D2A06C4D9002D4527 /* Manrope-Bold.ttf */,
 				8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */,
 				8176D7602A06C4DA002D4527 /* Manrope-ExtraLight.ttf */,
+				815435C82A30C29B00CA4734 /* GoogleService-Info.plist */,
 				8176D75E2A06C4DA002D4527 /* Manrope-Light.ttf */,
 				8176D7622A06C4DA002D4527 /* Manrope-Medium.ttf */,
 				8176D75F2A06C4DA002D4527 /* Manrope-Regular.ttf */,
 				8176D7632A06C4DA002D4527 /* Manrope-SemiBold.ttf */,
-				81E2A9EC2A06190A002D5BEB /* GoogleService-Info.plist */,
 				81E2A9CC2A061324002D5BEB /* OpenControlApp.swift */,
 				81E2A9CE2A061324002D5BEB /* ContentView.swift */,
 				81E2A9D02A061325002D5BEB /* Assets.xcassets */,
@@ -277,6 +279,7 @@
 				81E2A9E62A061481002D5BEB /* FirebaseStorage */,
 				8176D7952A06C75F002D4527 /* AgoraUIKit */,
 				8176D7982A06C7B6002D4527 /* SwiftUICalendar */,
+				815435CB2A30CDC900CA4734 /* HalfASheet */,
 			);
 			productName = OpenControl;
 			productReference = 81E2A9C92A061324002D5BEB /* OpenControl.app */;
@@ -310,6 +313,7 @@
 				81E2A9DF2A061481002D5BEB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
 				8176D7972A06C7B6002D4527 /* XCRemoteSwiftPackageReference "SwiftUICalendar" */,
+				815435CA2A30CDC900CA4734 /* XCRemoteSwiftPackageReference "HalfASheet" */,
 			);
 			productRefGroup = 81E2A9CA2A061324002D5BEB /* Products */;
 			projectDirPath = "";
@@ -333,7 +337,7 @@
 				81E2A9D12A061325002D5BEB /* Assets.xcassets in Resources */,
 				8176D7662A06C4DA002D4527 /* Manrope-Light.ttf in Resources */,
 				8176D7682A06C4DA002D4527 /* Manrope-ExtraLight.ttf in Resources */,
-				81E2A9ED2A06190A002D5BEB /* GoogleService-Info.plist in Resources */,
+				815435C92A30C29B00CA4734 /* GoogleService-Info.plist in Resources */,
 				8176D7672A06C4DA002D4527 /* Manrope-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,12 +530,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexx-bobr.OpenControl";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexx-bobr.OpenControl.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -557,12 +562,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexx-bobr.OpenControl";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexx-bobr.OpenControl.v1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -594,6 +600,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		815435CA2A30CDC900CA4734 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS.git";
@@ -621,6 +635,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		815435CB2A30CDC900CA4734 /* HalfASheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 815435CA2A30CDC900CA4734 /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
 		8176D7952A06C75F002D4527 /* AgoraUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8176D7942A06C75F002D4527 /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;

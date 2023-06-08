@@ -53,11 +53,14 @@ struct Profile: View {
                         
                         ScrollView{
                             
-                            Text("Ваш бизнес:")
+                            Text("Ваш бизнес:").font(Font.custom("Manrope", size: 21)).fontWeight(.bold)
                             
                             ZStack{
-                                RoundedRectangle(cornerRadius: 12).foregroundColor(Color(hex: "FAEDDB")).frame(width: 333, height: 128)
-                                Text("ОА “easy coffee”")
+                                RoundedRectangle(cornerRadius: 12).foregroundColor(Color(hex: "D9D9D9")).frame(width: 333, height: 128)
+                                VStack{
+                                    Text("ОА “easy coffee”").font(Font.custom("Manrope", size: 16)).fontWeight(.bold)
+                                    Text("ОА “easy coffee”").font(Font.custom("Manrope", size: 14)).fontWeight(.regular)
+                                }
                             }
                             
                             
@@ -84,8 +87,8 @@ struct Profile: View {
                             }, label: {
                                 HStack{
                                     ZStack {
-                                        Circle().frame(width: 44, height: 44).foregroundColor(mainColorOrange)
-                                        Image(systemName: "plus").font(.system(size: 24)).foregroundColor(.red)
+                                        Circle().frame(width: 44, height: 44).foregroundColor(mainColorRed)
+                                        Image(systemName: "plus").font(.system(size: 24)).foregroundColor(mainColorOrange1)
                                     }.padding(.leading, 25)
                                     
                                     Text("Добавить бизнес").foregroundColor(.black).padding(.leading)
@@ -99,7 +102,7 @@ struct Profile: View {
                             }, label: {
                                 HStack{
                                     ZStack {
-                                        Circle().frame(width: 44, height: 44).foregroundColor(mainColorOrange)
+                                        Circle().frame(width: 44, height: 44).foregroundColor(mainColorRed)
                                         Image(systemName: "pencil").font(.system(size: 24)).foregroundColor(mainColorOrange1)
                                     }.padding(.leading, 25)
                                     
@@ -116,8 +119,8 @@ struct Profile: View {
                             } label: {
                                 HStack{
                                     ZStack {
-                                        Circle().frame(width: 44, height: 44).foregroundColor(Color(hex: "FAEEEE"))
-                                        Image(systemName: "door.left.hand.open").font(.system(size: 24)).foregroundColor(.red)
+                                        Circle().frame(width: 44, height: 44).foregroundColor(mainColorRed)
+                                        Image(systemName: "door.left.hand.open").font(.system(size: 24)).foregroundColor(mainColorOrange1)
                                     }.padding(.leading, 25)
                                     
                                     Text("Выход").foregroundColor(.black).padding(.leading)

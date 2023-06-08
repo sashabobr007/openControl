@@ -99,7 +99,7 @@ class NewNoteViewModel: ObservableObject {
     func fetchData () {
         
         
-        Database.shared.kno(path: "/knos") { (value : Kno) in
+        Database.shared.kno(path: "/info/knos") { (value : Kno) in
             DispatchQueue.main.async {
                 for item in value.knoList{
                     self.kno.append(Knolist(id: item.id, name: item.name))
@@ -122,7 +122,7 @@ class NewNoteViewModel: ObservableObject {
                      id = item.id
                  }
              }
-             Database.shared.kno(path: "/measures?knoId=\(id)") { (value : Measurements) in
+             Database.shared.kno(path: "/info/measures?knoId=\(id)") { (value : Measurements) in
                  DispatchQueue.main.async {
                      for item in value.measures{
                          self.mes.append(MMeasure(id: item.id, name: item.name))
@@ -234,7 +234,7 @@ class NewNoteViewModel: ObservableObject {
                       "measureId": id
                 ]
 
-                Database.shared.saveApp(path: "/appointments/select", parameters: params) { (value : Welcome) in
+                Database.shared.saveApp(path: "/business-user/appointments/select", parameters: params) { (value : Welcome) in
                     DispatchQueue.main.async {
                         params = [
 
@@ -245,10 +245,10 @@ class NewNoteViewModel: ObservableObject {
                         ]
                         print(params)
 
-                        Database.shared.saveApp(path: "/appointments/select", parameters: params) { (value : Welcome) in
-
-
-                                     }
+//                        Database.shared.saveApp(path: "/appointments/select", parameters: params) { (value : Welcome) in
+//
+//
+//                                     }
 
                     }
 

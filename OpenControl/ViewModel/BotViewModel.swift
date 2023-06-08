@@ -55,6 +55,7 @@ class BotViewModel : ObservableObject {
     
     @Published var text = ""
     
+    
     @Published var chatMessages : [Mes] = [Mes(text: "Здравствуйте, я бот-помощник\n Чем могу помочь?", bot: true)]
     
     @Published var count = 0
@@ -62,7 +63,7 @@ class BotViewModel : ObservableObject {
     func restart(){
         self.count = 0
         self.chatMessages.removeAll()
-        chatMessages.append(Mes(text: "Здравствуйте, Артем, я бот-помощник\n Чем могу помочь?", bot: true))
+        chatMessages.append(Mes(text: "Здравствуйте, я бот-помощник\n Чем могу помочь?", bot: true))
         
     }
     
