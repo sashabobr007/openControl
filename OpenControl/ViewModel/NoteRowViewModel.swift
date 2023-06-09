@@ -38,4 +38,18 @@ class NoteRowViewModel: ObservableObject {
         }
     }
     
+    func approve (id : String) {
+        let uid = UserRole.uid
+        let params : [String: Any] = [
+            "userId": uid,
+            "appointmentId": id
+        ]
+        
+        Database.shared.saveApp(path: "/inspection-user/appointments/agree", parameters: params) { (value : Welcome) in
+            
+        }
+    }
+    
+    
+    
 }

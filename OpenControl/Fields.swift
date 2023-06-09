@@ -15,18 +15,9 @@ struct FieldTextNew: View {
 
     var body: some View {
         VStack(alignment: .leading){
-            Text(text).font(Font.custom("Manrope", size: 14)).fontWeight(.regular).fontWeight(.regular)
-           
-            ZStack{
-                RoundedRectangle(cornerRadius: 12).frame(width: 353, height: 29).foregroundColor(.white).overlay(RoundedRectangle(cornerRadius: 12).stroke(Color(hex: "E0E0E0") ?? .black, lineWidth: 1))
-                
-                 Text(textHide).foregroundColor(.gray).font(Font.custom("Manrope", size: 10)).fontWeight(.ultraLight).padding(.horizontal)
-                    
-                    
-              
-            }
-
-        }.padding(.horizontal)
+            Text(text).font(Font.custom("Manrope", size: 12)).fontWeight(.regular).foregroundColor(Color(hex: "B4B4B4"))
+                 Text(textHide).foregroundColor(.black).font(Font.custom("Manrope", size: 14)).fontWeight(.regular).padding(.top, 10)
+        }
         }
     }
 

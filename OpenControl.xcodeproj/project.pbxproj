@@ -13,7 +13,6 @@
 		81482C272A22328900B0A791 /* NewNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81482C262A22328900B0A791 /* NewNoteViewModel.swift */; };
 		814E6ABA2A0969BD00BB6DE2 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */; };
 		814E6ABC2A0973EB00BB6DE2 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814E6ABB2A0973EB00BB6DE2 /* Localization.swift */; };
-		815435C92A30C29B00CA4734 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815435C82A30C29B00CA4734 /* GoogleService-Info.plist */; };
 		815435CC2A30CDC900CA4734 /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = 815435CB2A30CDC900CA4734 /* HalfASheet */; };
 		8154DDA32A13C89200B76173 /* BotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154DDA22A13C89200B76173 /* BotViewModel.swift */; };
 		8154DDA52A13C9C800B76173 /* BotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8154DDA42A13C9C800B76173 /* BotView.swift */; };
@@ -43,6 +42,7 @@
 		8176D7962A06C75F002D4527 /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8176D7952A06C75F002D4527 /* AgoraUIKit */; };
 		8176D7992A06C7B6002D4527 /* SwiftUICalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 8176D7982A06C7B6002D4527 /* SwiftUICalendar */; };
 		8176D79B2A06E6B2002D4527 /* PickerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176D79A2A06E6B2002D4527 /* PickerNew.swift */; };
+		818EACE32A339C3800BEED9D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 818EACE22A339C3800BEED9D /* GoogleService-Info.plist */; };
 		819EB98D2A13E29500C79451 /* Enter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EB98C2A13E29500C79451 /* Enter.swift */; };
 		819EB9912A13E8EC00C79451 /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EB9902A13E8EC00C79451 /* Fields.swift */; };
 		819EB9932A13EC3600C79451 /* AddBuisness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819EB9922A13EC3600C79451 /* AddBuisness.swift */; };
@@ -74,7 +74,6 @@
 		81482C262A22328900B0A791 /* NewNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewModel.swift; sourceTree = "<group>"; };
 		814E6AB92A0969BD00BB6DE2 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		814E6ABB2A0973EB00BB6DE2 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		815435C82A30C29B00CA4734 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8154DDA22A13C89200B76173 /* BotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotViewModel.swift; sourceTree = "<group>"; };
 		8154DDA42A13C9C800B76173 /* BotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotView.swift; sourceTree = "<group>"; };
 		8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		8176D77F2A06C6DE002D4527 /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		8176D7812A06C6DE002D4527 /* ModelUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelUser.swift; sourceTree = "<group>"; };
 		8176D79A2A06E6B2002D4527 /* PickerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerNew.swift; sourceTree = "<group>"; };
+		818EACE22A339C3800BEED9D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		819EB98C2A13E29500C79451 /* Enter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enter.swift; sourceTree = "<group>"; };
 		819EB9902A13E8EC00C79451 /* Fields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
 		819EB9922A13EC3600C79451 /* AddBuisness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBuisness.swift; sourceTree = "<group>"; };
@@ -225,8 +225,8 @@
 				8176D75D2A06C4D9002D4527 /* Manrope-Bold.ttf */,
 				8176D75C2A06C4D9002D4527 /* Manrope-ExtraBold.ttf */,
 				8176D7602A06C4DA002D4527 /* Manrope-ExtraLight.ttf */,
-				815435C82A30C29B00CA4734 /* GoogleService-Info.plist */,
 				8176D75E2A06C4DA002D4527 /* Manrope-Light.ttf */,
+				818EACE22A339C3800BEED9D /* GoogleService-Info.plist */,
 				8176D7622A06C4DA002D4527 /* Manrope-Medium.ttf */,
 				8176D75F2A06C4DA002D4527 /* Manrope-Regular.ttf */,
 				8176D7632A06C4DA002D4527 /* Manrope-SemiBold.ttf */,
@@ -336,8 +336,8 @@
 				8176D76A2A06C4DA002D4527 /* Manrope-Medium.ttf in Resources */,
 				81E2A9D12A061325002D5BEB /* Assets.xcassets in Resources */,
 				8176D7662A06C4DA002D4527 /* Manrope-Light.ttf in Resources */,
+				818EACE32A339C3800BEED9D /* GoogleService-Info.plist in Resources */,
 				8176D7682A06C4DA002D4527 /* Manrope-ExtraLight.ttf in Resources */,
-				815435C92A30C29B00CA4734 /* GoogleService-Info.plist in Resources */,
 				8176D7672A06C4DA002D4527 /* Manrope-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,40 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseStorage
 
+struct AppointmentInsDetail: Decodable {
+    let id, time: String
+    let knoID: Int
+    let knoName, businessID: String
+    let inspectionID: JSONNull?
+    let measureID: Int
+    let measureName: String
+    let description, files: JSONNull?
+    let status: String
 
+    enum CodingKeys: String, CodingKey {
+        case id, time
+        case knoID = "knoId"
+        case knoName
+        case businessID = "businessId"
+        case inspectionID = "inspectionId"
+        case measureID = "measureId"
+        case measureName, description, files, status
+    }
+}
+
+struct AppointmentInspectorList: Decodable {
+    let appointments: [AppointmentInspector]
+}
+
+// MARK: - Appointment
+struct AppointmentInspector: Decodable {
+    let id, time, status, businessUserID: String
+    
+    enum CodingKeys: String, CodingKey {
+            case id, time, status
+            case businessUserID = "businessUserId"
+        }
+}
 
 // MARK: - Appointment
 struct AppointmentDetail: Decodable {

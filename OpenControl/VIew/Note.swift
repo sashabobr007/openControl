@@ -35,9 +35,12 @@ struct Note: View {
     init(app: AppointmentView, vm: NoteRowViewModel = NoteRowViewModel()) {
         self.app = app
         self.vm = vm
+        
         //vm.fetchData(id: app.id)
     }
-
+    @State var showsAlert = false
+    @State var text = ""
+    @State var text1 = ""
 //    let id : String
 //
 //    init(vm: NoteRowViewModel = NoteRowViewModel(), id: String) {
@@ -47,7 +50,6 @@ struct Note: View {
 //    }
     var body: some View {
         
-        NavigationView{
             VStack{
                 Text("Информация о записи").font(Font.custom("Manrope", size: 30)).fontWeight(.bold).padding(.bottom, 1)
                 Capsule().foregroundColor(mainColorOrange1).frame(width: 330, height: 5).padding(.horizontal, 30).padding(.top, 1)
@@ -63,7 +65,7 @@ struct Note: View {
                                             Video(user: User(uid: "U6LIvDgejoR2Pl9OJmx9Fz9mLay2", email: ""))
 
                                         }else{
-                                            Video(user: User(uid: "5", email: ""))
+                                            Video(user: User(uid: String(app.knoId) , email: ""))
                                         }
                                     } label: {
                                         Group{
@@ -84,30 +86,63 @@ struct Note: View {
                 }.padding(.vertical)
 
                 ScrollView{
-                    Group{
-                        FieldTextNew(text: "Kонтрольно-надзорный орган", textHide: app.knoName)
-                        
-                    }.padding(.horizontal, 40)
-
+                    VStack(spacing: 20){
+                        if UserRole.role == .buisnes{
+                            HStack{
+                                FieldTextNew(text: "Kонтрольно-надзорный орган", textHide: app.knoName).padding(.leading, 20)
+                                Spacer()
+                            }
+                            HStack{
+                                FieldTextNew(text: "Вид контроля", textHide: app.measureName).padding(.leading, 20)
+                                Spacer()
+                            }
+                        }else{
+                            HStack{
+                                FieldTextNew(text: "Фамилия", textHide: app.knoName).padding(.leading, 20)
+                            Spacer()
+                            }
+                            HStack{
+                                FieldTextNew(text: "Имя", textHide: app.measureName).padding(.leading, 20)
+                                Spacer()
+                            }
+                            
+                        }
+                        HStack{
+                            FieldTextNew(text: "Тип встречи", textHide: "Видео-конференция").padding(.leading, 20)
+                            Spacer()
+                        }
+                    }
                 }
                 Button {
-                    vm.delete(id: app.id)
+                    if UserRole.role == .buisnes{
+                        vm.delete(id: app.id)
+
+                    }else{
+                        vm.approve(id: app.id)
+                    }
+                    showsAlert.toggle()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 20).frame(width: 165, height: 50).foregroundColor(mainColorOrange1)
-                        Text("Отменить запись").font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
+                        Text(text).font(Font.custom("Manrope", size: 14)).fontWeight(.bold).foregroundColor(.white)
+                    }
+                }.alert(isPresented: $showsAlert) {
+                    Alert(title: Text(text1))
+                }.onAppear {
+                    if UserRole.role == .inspector{
+                        print("ins")
+                        self.text = "Подтвердить запись"
+                        self.text1 = "Запись успешно подтверждена!"
+                    }else{
+                        self.text = "Отменить запись"
+                        self.text1 = "Запись успешно отменена!"
                     }
                 }
 
             }
 
-        }
         
-       
-        
-        
-            
-        
+
     }
 }
 

@@ -43,7 +43,9 @@ struct Video: View {
     @State var mDate = ""
     
     
-    let appId = "862e4e676c6c497f97014b5cd0c8f5bf"
+    //let appId = "862e4e676c6c497f97014b5cd0c8f5bf"
+    
+    let appId = "efe9f81f09164d32955260ccc3143b7d"
     
     let uid = Database.shared.getUuid()
     
@@ -130,12 +132,13 @@ struct Video: View {
 //                        print(isActive)
                         
                         
-                        if UserRole.role == .inspector{
-                            self.chanel = "\(self.user?.uid ?? "")-\(UserRole.uid)"
-                        }else{
-                            self.chanel = "\(self.uid)-\(self.user?.uid ?? "")"
-                        }
+//                        if UserRole.role == .inspector{
+//                            self.chanel = "\(self.user?.uid ?? "")-\(UserRole.uid)"
+//                        }else{
+//                            self.chanel = "\(self.uid)-\(self.user?.uid ?? "")"
+//                        }
                         
+                        self.chanel = "efe9f81f09164d32955260ccc3143b7d"
                         
                         
                         let idRandom = UInt.random(in: 0..<1000000)

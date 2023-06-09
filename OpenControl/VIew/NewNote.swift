@@ -37,19 +37,30 @@ class TimeNote : Identifiable, Comparable{
 
 
 struct TimeView: View {
-    @Binding var selected : Bool
-    var from : String
-    var to : String
+    @Binding var timeSelct : String
+    @Binding var time : String
+    @State var selected : Bool = false
     
     var body: some View {
-        
         Button {
-            selected.toggle()
+           timeSelct = time
         } label: {
             ZStack{
-                RoundedRectangle(cornerRadius: 15).frame(width: 109, height: 31).foregroundColor(selected ? mainColorOrange1 : mainColorOrange11)
+                RoundedRectangle(cornerRadius: 15).frame(width: 109, height: 31).foregroundColor(selected ? mainColorOrange1 : mainColorOrange3)
                 
-                Text("\(from)-\(to)").foregroundColor(.black)
+                Text("\(time)").foregroundColor(.black).font(Font.custom("Manrope", size: 10)).fontWeight(.bold)
+            }
+        }.onAppear {
+            if time == timeSelct{
+                selected.toggle()
+            }else{
+                selected = false
+            }
+        }.onChange(of: timeSelct) { newValue in
+            if time == timeSelct{
+                selected.toggle()
+            }else{
+                selected = false
             }
         }
         
@@ -59,7 +70,6 @@ struct TimeView: View {
 
 
 struct NewNote: View {
-    @State private var times = [TimeNote(from: "10:00", to: "11:00", selected: true), TimeNote(from: "12:00", to: "13:00", selected: false)]
     
     @State private var pod = ""
     @State private var dop = ""
@@ -74,6 +84,10 @@ struct NewNote: View {
     @State private var showingVideoPicker = false
     @State private var showingDocumentPicker = false
     @ObservedObject private var vm = NewNoteViewModel()
+    @State var showsAlert = false
+
+
+    @State private var timeSelect = ""
 
 
     var body: some View {
@@ -182,43 +196,23 @@ struct NewNote: View {
                         vm.fetchDateList()
                     }.padding(.horizontal)
                     
-                    FieldBin(textSelect: $vm.timeSelect, text: "Время", textHide: "выберите время", vm: vm )
+//                    FieldBin(textSelect: $vm.timeSelect, text: "Время", textHide: "выберите время", vm: vm )
 //                    HStack{
 //                        Text("Среда (20.09.23)").padding(.leading)
 //                        Spacer()
 //                    }
 //
-//                                        ScrollView(.horizontal){
-//
-//                                            HStack{
-//                                                ForEach(times) { time in
-//
-//
-//                                                    // TimeView(selected: time.$selected, from: time.from, to: time.to)
-//
-//                                                    VStack{
-//                                                        Button {
-//                                                            for i in 0..<times.count{
-//                                                                if times[i] == time{
-//                                                                    times[i].selected.toggle()
-//                                                                }
-//                                                            }
-//                                                            //  time.selected.toggle()
-//
-//                                                        } label: {
-//                                                            ZStack{
-//                                                                RoundedRectangle(cornerRadius: 15).frame(width: 109, height: 31).foregroundColor(time.selected ? mainColorOrange1 : mainColorOrange11)
-//
-//                                                                Text("\(time.from)-\(time.to)").foregroundColor(.black)
-//                                                            }
-//                                                        }
-//
-//                                                    }
-//
-//                                                }
-//                                            }
-//
-//                                        }.padding(.horizontal)
+                                        ScrollView(.horizontal){
+
+                                            HStack{
+                                                ForEach($vm.timesStr, id: \.self) { time in
+                                                    
+                                                    TimeView(timeSelct: $vm.timeSelect, time: time)
+
+                                                }
+                                            }
+
+                                        }.padding(.horizontal)
                                         
                     
                 }
@@ -245,11 +239,14 @@ struct NewNote: View {
                 Button {
                     //print(organ)
                     vm.addNote()
+                    showsAlert.toggle()
                 } label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 20).frame(width: 165, height: 50).foregroundColor(mainColorOrange1)
                         Text("Записаться").font(Font.custom("Manrope", size: 16)).fontWeight(.bold).foregroundColor(.white)
                     }
+                }.alert(isPresented: $showsAlert) {
+                    Alert(title: Text("Запись успешно создана!"))
                 }
                 
             }

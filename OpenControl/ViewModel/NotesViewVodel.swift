@@ -42,19 +42,46 @@ class NoteViewModel: ObservableObject {
     }
     
     func fetchDataIns () {
-        let uid = UserRole.uid
-        
-//        Database.shared.kno(path: "/appointments/inspection?knoId=\(uid)&inspectorId=\(uid)") { (value : AppointmentList) in
-//            DispatchQueue.main.async {
-//                print(value)
-//                for item in value.appointments{
-//                    self.app.append(AppointmentView(id: item.id, time: item.time, status: item.status, withWho: item.withWho))
-//
-//                }
-//            }
-//
-//        }
-    }
+            let uid = UserRole.uid
+        print(uid)
+            self.app.removeAll()
+            
+            let dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = dateFormat
+            //dateFormatter.locale = Locale(identifier: "ru_RU_POSIX")
+            
+            Database.shared.kno(path: "/inspection-user/appointments?inspectorId=\(uid)") { (value : AppointmentInspectorList) in
+                DispatchQueue.main.async {
+                    print(value.appointments)
+                    var num = 0
+                    for item in value.appointments{
+                        
+                        Database.shared.kno(path: "/business-user/info?userId=\(item.businessUserID)") { (value : UserJson) in
+                        DispatchQueue.main.async {
+                            
+                                 //print(item.time)
+                                 let data = item.time.split(separator: ".").first?.description ?? ""
+                                 let startDate = dateFormatter.date(from: data) ?? Date()
+                                 print(startDate)
+                                 
+                         //        //print(dateSelect)
+                         //        //let str = dateSelect.formatted(date: .abbreviated, time: .omitted)
+                            self.app.append(AppointmentView(id: item.id, time: item.time, status: item.status, knoName: value.user.firstName, measureName: value.user.lastName, knoId: 0, measureId: 0, date: startDate, num: num))
+                                 num += 1
+                                 
+                             }
+                        }
+                    }
+                    
+                   
+                    self.app.sort {
+                        $0.date < $1.date
+                    }
+                }
+                
+            }
+        }
     
     
     func fetchData () {

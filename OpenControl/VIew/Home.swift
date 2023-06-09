@@ -39,7 +39,14 @@ struct Home: View {
                         } label: {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 15).frame(width: 170, height: 168).foregroundColor(Color(hex: "D9D9D9")).padding(.trailing)
-                                Text("Чат-бот").foregroundColor(.black)
+                                Image("Chat").resizable().frame(width: 43, height: 43).padding(.bottom, 100).padding(.leading, 90)
+                                VStack{
+                                    Text("Чат-бот").foregroundColor(.black).font(Font.custom("Manrope", size: 14)).fontWeight(.regular).padding(.trailing, 30)
+                                    HStack{
+                                        Circle().foregroundColor(mainColorOrange1).frame(width: 11, height: 11)
+                                        Text("Начать беседу").foregroundColor(mainColorOrange1).font(Font.custom("Manrope", size: 12)).fontWeight(.medium)
+                                    }
+                                }.padding(.top, 100).padding(.trailing, 70)
                             }
                         }
                       

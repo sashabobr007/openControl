@@ -30,6 +30,12 @@ struct MainView: View {
             //PickerNew()
         }.onAppear {
             login = Auth.auth().currentUser?.uid ?? ""
+            var email = Auth.auth().currentUser?.email ?? ""
+            email = email.split(separator: "@").first?.description ?? ""
+            if let emint = Int(email){
+                UserRole.role = .inspector
+                UserRole.uid = String(emint)
+            }
             print(login)
         }
         

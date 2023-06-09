@@ -261,7 +261,11 @@ struct Notes: View {
                 }
                 
             }.onAppear {
-                vm.fetchData()
+                if UserRole.role == .buisnes{
+                    vm.fetchData()
+                }else{
+                    vm.fetchDataIns()
+                }
             }
             
         }

@@ -272,7 +272,6 @@ struct BotView: View {
                     .padding()
                 }
                 .height(.proportional(0.40))
-                .closeButtonColor(UIColor.white)
                 .backgroundColor(.white)
                 .contentInsets(EdgeInsets(top: 30, leading: 10, bottom: 30, trailing: 10))
             }
