@@ -56,7 +56,8 @@ struct Home: View {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 15).frame(width: 170, height: 168).foregroundColor(Color(hex: "D9D9D9"))
                                 Image("Combined-Shape").resizable().frame(width: 42, height: 47).padding(.bottom, 100).padding(.leading, 90)
-                                Text("Ближайшая запись:").font(Font.custom("Manrope", size: 14)).fontWeight(.regular).foregroundColor(.black)
+                               
+                                Text("18 июня 2023 11:00").font(Font.custom("Manrope", size: 14)).fontWeight(.regular).foregroundColor(.black).padding(.top, 50)
                             }
                         }
                     }

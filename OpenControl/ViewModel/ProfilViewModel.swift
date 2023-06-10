@@ -21,6 +21,7 @@ class ProfilViewModel: ObservableObject {
     @Published var surName = ""
     @Published var inn = ""
     @Published var snils = ""
+    @Published var mobilePhone = ""
     //@Published var users : [User] = []
     
     init(){
@@ -40,6 +41,7 @@ class ProfilViewModel: ObservableObject {
         
               "userId": uid,
               "email": email,
+              "mobilePhone": mobilePhone,
               "firstName": firstName,
               "lastName": lastName,
               "surName": surName,
@@ -98,6 +100,7 @@ class ProfilViewModel: ObservableObject {
                 self.surName = value.user.surName
                 self.inn = String(value.user.inn)
                 self.snils = String(value.user.snils)
+                self.mobilePhone = value.user.mobilePhone ?? ""
                 UserRole.name = self.firstName
             }
 

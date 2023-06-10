@@ -105,10 +105,18 @@ class NoteViewModel: ObservableObject {
                     let startDate = dateFormatter.date(from: data) ?? Date()
                     print(startDate)
                     
+                    
+                    
             //        //print(dateSelect)
             //        //let str = dateSelect.formatted(date: .abbreviated, time: .omitted)
-                    self.app.append(AppointmentView(id: item.id, time: item.time, status: item.status, knoName: item.knoName, measureName: item.measureName, knoId: item.knoId, measureId: item.measureId, date: startDate, num: num))
-                    num += 1
+                    
+                    
+                            
+                            self.app.append(AppointmentView(id: item.id, time: item.time, status: item.status, knoName: item.knoName, measureName: item.measureName, knoId: item.knoId, measureId: item.measureId, date: startDate, num: num))
+                            num += 1
+                            
+                        
+                    
                     
                 }
                 self.app.sort {

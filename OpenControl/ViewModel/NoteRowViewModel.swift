@@ -12,6 +12,8 @@ class NoteRowViewModel: ObservableObject {
     @Published  var organ = 0
     @Published  var id = ""
     //@Published var  app : AppointmentView
+    @Published var mobilePhone = ""
+
     
 //    init(){
 //        fetchData()
@@ -47,6 +49,17 @@ class NoteRowViewModel: ObservableObject {
         
         Database.shared.saveApp(path: "/inspection-user/appointments/agree", parameters: params) { (value : Welcome) in
             
+        }
+    }
+    
+    func fetch(knoId : String){
+        print(knoId)
+        print("/inspection-user/info?userId=" + knoId)
+        Database.shared.kno(path: "/inspection-user/info?userId=" + knoId) { (value : InspectorJ) in
+            DispatchQueue.main.async {
+                print(value.user.mobilePhone)
+                self.mobilePhone = value.user.mobilePhone ?? ""
+            }
         }
     }
     

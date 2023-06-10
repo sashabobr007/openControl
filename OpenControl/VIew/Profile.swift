@@ -44,7 +44,7 @@ struct Profile: View {
                             
                             ZStack{
                                 RoundedRectangle(cornerRadius: 30).frame(width: 194, height: 34).foregroundColor(.white)
-                                Text(vm.email).tint(mainColorOrange1)
+                                Text("q3@yandex.ru").tint(mainColorOrange1)
                             }.padding(.top,10)
                         }.padding(.top, 60)
                     }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 360, alignment: .top).ignoresSafeArea()
@@ -59,7 +59,7 @@ struct Profile: View {
                                 RoundedRectangle(cornerRadius: 12).foregroundColor(Color(hex: "D9D9D9")).frame(width: 333, height: 128)
                                 VStack{
                                     Text("ОА “easy coffee”").font(Font.custom("Manrope", size: 16)).fontWeight(.bold)
-                                    Text("ОА “easy coffee”").font(Font.custom("Manrope", size: 14)).fontWeight(.regular)
+                                    Text("город Москва, улица Мира, дом 5").font(Font.custom("Manrope", size: 14)).fontWeight(.regular)
                                 }
                             }
                             

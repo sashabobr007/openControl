@@ -32,7 +32,8 @@ struct BotView: View {
                         Button {
                             chat.restart()
                         } label: {
-                            Image(systemName: "power")
+                           // Image(systemName: "power")
+                            Text("restart").font(Font.custom("Manrope", size: 14)).fontWeight(.bold)
                         }.padding(.trailing, 50)
                         
                         

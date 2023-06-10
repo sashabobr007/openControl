@@ -42,7 +42,7 @@ struct AddProfile: View {
                 Text("Контактная информация").font(Font.custom("Manrope", size: 18)).fontWeight(.bold).padding(.vertical).padding(.trailing, 130)
                 
                 VStack{
-                    FieldText(textSelect: $organ, text: "Телефон", textHide: "Введите ваш телефон")
+                    FieldText(textSelect: $vm.mobilePhone, text: "Телефон", textHide: "Введите ваш телефон")
                     
                     FieldText(textSelect: $organ, text: "Почта", textHide: "Введите вашу почту")
                 }

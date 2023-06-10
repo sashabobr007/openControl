@@ -137,11 +137,27 @@ struct UserJson: Decodable {
     let user: UserJ
 }
 
+struct InspectorJ: Decodable {
+    let user: UserIns
+}
+
+// MARK: - User
+struct UserIns: Decodable {
+    let id, email: String
+    
+    let firstName, lastName, surName: String
+    let knoID: Int
+    let mobilePhone: String
+
+   
+}
+
 // MARK: - User
 struct UserJ: Decodable {
     let id, email, firstName, lastName: String
     let surName: String
     let inn, snils: Int
+    let mobilePhone : String?
 }
 
 struct Welcome: Decodable {

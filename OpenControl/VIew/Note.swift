@@ -35,7 +35,6 @@ struct Note: View {
     init(app: AppointmentView, vm: NoteRowViewModel = NoteRowViewModel()) {
         self.app = app
         self.vm = vm
-        
         //vm.fetchData(id: app.id)
     }
     @State var showsAlert = false
@@ -83,7 +82,10 @@ struct Note: View {
                     
 
                     
-                }.padding(.vertical)
+                }.padding(.vertical).onAppear {
+                   // print(app.knoId)
+                    vm.fetch(knoId: String(app.knoId))
+                }
 
                 ScrollView{
                     VStack(spacing: 20){
@@ -109,6 +111,10 @@ struct Note: View {
                         }
                         HStack{
                             FieldTextNew(text: "Тип встречи", textHide: "Видео-конференция").padding(.leading, 20)
+                            Spacer()
+                        }
+                        HStack{
+                            FieldTextNew(text: "Контактная информация", textHide: vm.mobilePhone).padding(.leading, 20)
                             Spacer()
                         }
                     }
